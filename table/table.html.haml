@@ -1,9 +1,12 @@
 %table
-  - i ,cols = 0, 7
+  - i = 0
+  - cols = 7
   - (1..31).each do |num|
-    = "<tr>" if (i + cols) % cols == 0
-      %td
-		    = num
-    = "</tr>" if (i + cols + 1) % cols == 0
-  - i += 1
+    - if (i + cols) % cols == 0
+      %tr
+    %td
+      = num
+    - if (i + cols + 1) % cols == 0
+      %tr
+    - i += 1
 
