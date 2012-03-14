@@ -1,0 +1,9 @@
+table
+
+organize eny size of array in certain num cols table
+just set "cols" to wishable size
+
+table.html.erb - in erb format
+table.html.haml - in haml format
+
+feel free to use this code in your projects
